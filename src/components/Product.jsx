@@ -1,4 +1,4 @@
-//import { Quantity } from './Quantity.jsx'
+import { Quantity } from './Quantity.jsx'
 
 export function Product(props) {
 
@@ -8,6 +8,7 @@ export function Product(props) {
             <div className="card-body">
                 <h5 className="card-title">{props.product.nom}</h5>
                 <p className="card-text">{props.product.prix} €</p>
+                <h5 className="card-title"><Quantity /></h5>
                 <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
         </div>
